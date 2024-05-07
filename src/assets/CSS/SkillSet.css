@@ -1,0 +1,11 @@
+.logo{
+    margin-top: 20px;
+    max-width: 100px;
+}
+.logo-title{
+    margin-top: 5px;
+    text-align: center;
+    max-width: 100px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+}
