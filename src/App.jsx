@@ -3,7 +3,7 @@ import PreloaderLayout from "./PreloaderLayout";
 import LandingLayout from "./LandingLayout";
 import Landing from "./Pages/Landing";
 import Preloader from "./Pages/Preloader";
-import PageNotFound from "./Error/PageNotFound";
+// import PageNotFound from "./Error/PageNotFound";
 
 function App() {
     return (
@@ -21,7 +21,7 @@ function App() {
                 </Route>
 
                 {/* Error routes */}
-                <Route path="*" element={<PageNotFound />} />
+                {/* <Route path="*" element={<PageNotFound />} /> */}
 
             </Routes>
         </BrowserRouter>
