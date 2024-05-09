@@ -172,7 +172,6 @@ function Landing() {
                         <Nextprototype svg={svgs.p} title="Pelliccis" subtitle="Pelliccis Ordering" />
                     </div>
                     <div className='Resume'>
-                        <h5 className="Resume-section-heading">Resume</h5>
                         <div className='button-resume'>
                             <button className="ui-btn">
                                 <span>
@@ -212,6 +211,9 @@ function Landing() {
                                     </svg>
                                 </a>
                             </div>
+                        </div>
+                        <div className='footer'>
+                            <span>2024 © Chiranjibi Sahu. This is just my portfolio site showcasing my journey. Let's create something amazing together!</span>
                         </div>
                     </div>
                 </div>
