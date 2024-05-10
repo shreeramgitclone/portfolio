@@ -175,7 +175,7 @@ function Landing() {
                         <div className='button-resume'>
                             <button className="ui-btn">
                                 <span>
-                                    <a href="https://codersheart.in/Resume2%20(1).pdf" target="_blank">View resume</a>
+                                    <a href="https://codersheart.in/Resume.pdf" target="_blank">View resume</a>
                                 </span>
                             </button>
                         </div>
