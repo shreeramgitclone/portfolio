@@ -114,7 +114,7 @@ function PrototypeSection(props) {
             <div className="logo-prototype">
                 <div className="logo-p">{props.svg}</div>
                 <div className="logo-t">
-                    <span><a href="https://www.figma.com/proto/LceSUNxufCz4wIyP7wWAcs/Ezmanager?page-id=0%3A1&node-id=85-46&viewport=235%2C343%2C0.1&t=D8zh8BYYHvvhzSNY-1&scaling=scale-down&starting-point-node-id=85%3A46">{props.title}</a></span>
+                    <span><a style={{color: "white", textDecoration:"none"}} href="https://www.figma.com/proto/LceSUNxufCz4wIyP7wWAcs/Ezmanager?page-id=0%3A1&node-id=85-46&viewport=235%2C343%2C0.1&t=D8zh8BYYHvvhzSNY-1&scaling=scale-down&starting-point-node-id=85%3A46">{props.title}</a></span>
                     <p>{props.subtitle}</p>
                 </div>
             </div>
