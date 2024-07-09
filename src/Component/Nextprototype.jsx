@@ -3,23 +3,19 @@ import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 
 const slides = [
     {
-        image:
-            "https://codersheart.in/Welcome page 4.png",
+        image: "https://i.imgur.com/12wnc5y.png",
         title: "Animation",
     },
     {
-        image:
-            "https://codersheart.in/Dashboard.png",
+        image: "https://i.imgur.com/N2754Fj.png",
         title: "CSS",
     },
     {
-        image:
-            "https://codersheart.in/Odering.png",
+        image: "https://i.imgur.com/P0xLy0U.png",
         title: "HTML",
     },
     {
-        image:
-            "https://codersheart.in/Reservations.png",
+        image: "https://i.imgur.com/cCca6Jd.png",
         title: "React",
     },
 ];
