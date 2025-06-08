@@ -168,22 +168,34 @@ function Landing() {
 
 
                     <div className="Skill-Section">
-                        <div className="logo-wrap" style={{ marginBottom: "20px" }}>
-                            <SkillSet svg={svgs.figma} />
-                            <SkillSet svg={svgs.illustrator} />
-                            <SkillSet svg={svgs.xd} />
-
-                            <SkillSet svg={svgs.React} />
-                            <SkillSet svg={svgs.HTML} />
-                            <SkillSet svg={svgs.CSS} />
+                        <div className="logo-wrap" style={{ marginBottom: "20px", display: "flex", gap: "20px" }}>
+                            <div className="skillset-svg" style={{ animationDelay: "0s" }}>
+                                <SkillSet svg={svgs.figma} />
+                            </div>
+                            <div className="skillset-svg" style={{ animationDelay: "0.5s" }}>
+                                <SkillSet svg={svgs.illustrator} />
+                            </div>
+                            <div className="skillset-svg" style={{ animationDelay: "1s" }}>
+                                <SkillSet svg={svgs.xd} />
+                            </div>
+                            <div className="skillset-svg" style={{ animationDelay: "1.5s" }}>
+                                <SkillSet svg={svgs.React} />
+                            </div>
+                            <div className="skillset-svg" style={{ animationDelay: "2s" }}>
+                                <SkillSet svg={svgs.HTML} />
+                            </div>
+                            <div className="skillset-svg" style={{ animationDelay: "2.5s" }}>
+                                <SkillSet svg={svgs.CSS} />
+                            </div>
                         </div>
+
                         <span className="Skill-Title">Skill sets</span>
                     </div>
                     <div className="prototype-section">
-                        <h5 className="prototype-section-heading">Prototypes</h5>
+                        <h5 className="prototype-section-heading">My Work</h5>
                         <PrototypeSection svg={svgs.Ezpos} title="EZ-Manager" subtitle="Ez-pos Dashboard" />
                         <Nextprototype svg={svgs.p} title="Pelliccis" subtitle="Pelliccis Ordering" />
-                        <Farmingprototype svg={svgs.p} title="Pelliccis" subtitle="Pelliccis Ordering" />
+                        <Farmingprototype svg={svgs.p} title="Plant Guard" subtitle="Farming solution" />
 
                     </div>
                     <div className='Resume'>
