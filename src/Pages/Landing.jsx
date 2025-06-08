@@ -159,7 +159,7 @@ function Landing() {
                             <SkillSet svg={svgs.figma} />
                             <SkillSet svg={svgs.illustrator} />
                             <SkillSet svg={svgs.xd} />
-                            <SkillSet svg={svgs.AF} />
+                            
                             <SkillSet svg={svgs.React} />
                             <SkillSet svg={svgs.HTML} />
                             <SkillSet svg={svgs.CSS} />
@@ -213,7 +213,7 @@ function Landing() {
                             </div>
                         </div>
                         <div className='footer'>
-                            <span>2024 © Chiranjibi Sahu. This is just my portfolio site showcasing my journey. Let's create something amazing together!</span>
+                            <span>2020 © Shreeram Das. This is just my portfolio site showcasing my journey. Let's create something amazing together!</span>
                         </div>
                     </div>
                 </div>
