@@ -10,6 +10,56 @@
     color: white;
 }
 
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+   
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-size: small;
+   
+   
+    margin-top: 30px;
+}
+
+.text-section {
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+.image-section {
+    flex: 1 1 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        order: 2;
+    }
+
+    .image-section {
+        order: 1;
+    }
+}
+
+
 .upper-name-section {
     display: flex;
     flex-direction: column;
@@ -17,31 +67,22 @@
     justify-content: center;
     width: 100%;
     margin-top: 40px;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 .upper-name-section .Title {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: xx-large;
 }
 
-.upper-name-section .Description {
-    margin-top: 20px;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: small;
-    text-align: justify;
-    border: 1px dashed white;
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 20px;
+
+.Descriptionttt{
+    margin-bottom: 30px;
+    font-size: 18px;
 }
 
 .Skill-Section {
@@ -375,13 +416,16 @@
     .upper-name-section {
         max-width: 320px;
     }
-    .Skill-Section{
+
+    .Skill-Section {
         max-width: 320px;
     }
-    .prototype-section{
+
+    .prototype-section {
         max-width: 320px;
     }
-    .Resume{
+
+    .Resume {
         max-width: 320px;
     }
 }

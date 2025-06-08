@@ -3,7 +3,9 @@ import '../assets/CSS/Landing.css';
 import SkillSet from "../Component/SkillSet";
 import PrototypeSection from "../Component/PrototypeSection";
 import Nextprototype from '../Component/Nextprototype';
+import Farmingprototype from '../Component/Farmingprototype';
 import '../assets/CSS/Preloader.css';
+import profile from "../assets/Images/profile.jpeg"
 
 function Landing() {
     const [showPreloader, setShowPreloader] = useState(true);
@@ -149,17 +151,28 @@ function Landing() {
             ) : (
                 <div className="LandingBody">
                     <div className="upper-name-section">
-                        <span className="Title">Shreeram Das</span>
-                        <span className="Description">
-                            UI/UX designers are digital architects, crafting seamless experiences where aesthetics meet functionality, painting worlds users love to explore. With pixels as their paintbrush, they blend creativity and empathy to shape the way we interact with technology. 🎨💻
-                        </span>
+                        <div className="profile-section">
+                            <div className="text-section">
+                                <span className="Title">Shreeram Das</span>
+                                <br />
+                                <span className="Descriptionttt">
+                                    UI/UX designers are digital architects, crafting seamless experiences where aesthetics meet functionality, painting worlds users love to explore. With pixels as their paintbrush, they blend creativity and empathy to shape the way we interact with technology. 🎨💻
+                                </span>
+                            </div>
+                            <div className="image-section">
+                                <img src={profile} alt="Shreeram Das" className="profile-image" />
+                            </div>
+                        </div>
+
                     </div>
+
+
                     <div className="Skill-Section">
                         <div className="logo-wrap" style={{ marginBottom: "20px" }}>
                             <SkillSet svg={svgs.figma} />
                             <SkillSet svg={svgs.illustrator} />
                             <SkillSet svg={svgs.xd} />
-                            
+
                             <SkillSet svg={svgs.React} />
                             <SkillSet svg={svgs.HTML} />
                             <SkillSet svg={svgs.CSS} />
@@ -170,6 +183,8 @@ function Landing() {
                         <h5 className="prototype-section-heading">Prototypes</h5>
                         <PrototypeSection svg={svgs.Ezpos} title="EZ-Manager" subtitle="Ez-pos Dashboard" />
                         <Nextprototype svg={svgs.p} title="Pelliccis" subtitle="Pelliccis Ordering" />
+                        <Farmingprototype svg={svgs.p} title="Pelliccis" subtitle="Pelliccis Ordering" />
+
                     </div>
                     <div className='Resume'>
                         <div className='button-resume'>
@@ -181,10 +196,10 @@ function Landing() {
                         </div>
                         <div className='socialmedia-icons'>
                             <div class="social-buttons">
-                                <a href="https://github.com/Chiranjibi098" class="social-button github">
+                                <a href="https://github.com/shreeramgitclone" class="social-button github">
                                     <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19"><path d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z"></path></svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/chiranjibi-sahu-2b1a721b8/" class="social-button linkedin">
+                                <a href="https://www.linkedin.com/in/shreeram-das-14324a195/" class="social-button linkedin">
                                     <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g id="Icons" stroke="none" stroke-width="1">
                                             <g transform="translate(-702.000000, -265.000000)">
@@ -194,10 +209,10 @@ function Landing() {
                                         </g>
                                     </svg>
                                 </a>
-                                <a href="https://dribbble.com/Chiranjibi_Sahu" class="social-button facebook">
+                                <a href="https://dribbble.com/seri0us" class="social-button facebook">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119.3 8 8 119.3 8 256s111.3 248 248 248 248-111.3 248-248S392.7 8 256 8zm164 114.4c29.5 36 47.4 82 47.8 132-7-1.5-77-15.7-147.5-6.8-5.8-14-11.2-26.4-18.6-41.6 78.3-32 113.8-77.5 118.3-83.5zM396.4 97.9c-3.8 5.4-35.7 48.3-111 76.5-34.7-63.8-73.2-116.2-79-124 67.2-16.2 138 1.3 190.1 47.5zm-230.5-33.3c5.6 7.7 43.4 60.1 78.5 122.5-99.1 26.3-186.4 25.9-195.8 25.8C62.4 147.2 106.7 92.6 165.9 64.6zM44.2 256.3c0-2.2 0-4.3 .1-6.5 9.3 .2 111.9 1.5 217.7-30.1 6.1 11.9 11.9 23.9 17.2 35.9-76.6 21.6-146.2 83.5-180.5 142.3C64.8 360.4 44.2 310.7 44.2 256.3zm81.8 167.1c22.1-45.2 82.2-103.6 167.6-132.8 29.7 77.3 42 142.1 45.2 160.6-68.1 29-150 21.1-212.8-27.9zm248.4 8.5c-2.2-12.9-13.4-74.9-41.2-151 66.4-10.6 124.7 6.8 131.9 9.1-9.4 58.9-43.3 109.8-90.8 142z" /></svg>
                                 </a>
-                                <a href="https://www.instagram.com/chiranjibi_sahu/" class="social-button instagram">
+                                <a href="https://www.instagram.com/shreeram_das_/" class="social-button instagram">
                                     <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <g id="Page-1" stroke="none" stroke-width="1">
                                             <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
