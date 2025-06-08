@@ -149,7 +149,7 @@ function Landing() {
             ) : (
                 <div className="LandingBody">
                     <div className="upper-name-section">
-                        <span className="Title">Chiranjbi Sahu</span>
+                        <span className="Title">Shreeram Das</span>
                         <span className="Description">
                             UI/UX designers are digital architects, crafting seamless experiences where aesthetics meet functionality, painting worlds users love to explore. With pixels as their paintbrush, they blend creativity and empathy to shape the way we interact with technology. 🎨💻
                         </span>
@@ -175,7 +175,7 @@ function Landing() {
                         <div className='button-resume'>
                             <button className="ui-btn">
                                 <span>
-                                    <a href="https://drive.google.com/file/d/1r6W-Y7NDJnRpI5RlBn2LB6dBzs4Efe0j/view?usp=sharing" target="_blank">View resume</a>
+                                    <a href="https://drive.google.com/file/d/1NJNae8aPR6fYg2YrwN3NVEqD8t-dAZ1J/view?usp=sharing" target="_blank">View resume</a>
                                 </span>
                             </button>
                         </div>
