@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/CSS/Landing.css';
 import SkillSet from "../Component/SkillSet";
-import PrototypeSection from "../Component/PrototypeSection";
+
+import PrototypeSection from '../Component/PrototypeSection';
+import PlantGuardt from '../Component/PlantGuardt';
 import Nextprototype from '../Component/Nextprototype';
 import Farmingprototype from '../Component/Farmingprototype';
+import Workexperience from '../Component/workexperience';
+import CarRental from '../Component/Carrental';
 import '../assets/CSS/Preloader.css';
 import profile from "../assets/Images/profile.jpeg"
 
@@ -153,11 +157,10 @@ function Landing() {
                     <div className="upper-name-section">
                         <div className="profile-section">
                             <div className="text-section">
-                                <span className="Title">Shreeram Das</span>
+                                <span className="Title"> 👨🏻‍💻 Shreeram Das</span>
                                 <br />
                                 <span className="Descriptionttt">
-                                    UI/UX designers are digital architects, crafting seamless experiences where aesthetics meet functionality, painting worlds users love to explore. With pixels as their paintbrush, they blend creativity and empathy to shape the way we interact with technology. 🎨💻
-                                </span>
+                                    UI/UX developers are digital architects, building seamless experiences where aesthetics meet functionality, coding worlds users love to explore. With pixels as their paintbrush and code as their canvas, they blend creativity, empathy, and technical expertise to shape how we interact with technology   </span>
                             </div>
                             <div className="image-section">
                                 <img src={profile} alt="Shreeram Das" className="profile-image" />
@@ -192,12 +195,18 @@ function Landing() {
                         <span className="Skill-Title">Skill sets</span>
                     </div>
                     <div className="prototype-section">
-                        <h5 className="prototype-section-heading">My Work</h5>
-                        <PrototypeSection svg={svgs.Ezpos} title="EZ-Manager" subtitle="Ez-pos Dashboard" />
+                        <h1 className="workhighlight">🔥Work Highlights</h1>
+                        <PlantGuardt svg={svgs.Ezpos} title="Plantguard" subtitle="Ez-pos Dashboard" />
+                        <Farmingprototype svg={svgs.p} title="Ez-order" subtitle="A POS ordering system" />
                         <Nextprototype svg={svgs.p} title="Pelliccis" subtitle="Pelliccis Ordering" />
-                        <Farmingprototype svg={svgs.p} title="Plant Guard" subtitle="Farming solution" />
+                        <CarRental svg={svgs.p} title="MOTIONCAR" subtitle="Car Rental Landing Page" />
+                        <PrototypeSection svg={svgs.Ezpos} title="EZ-Manager" subtitle="Ez-pos Dashboard" />
+                        <Workexperience svg={svgs.p} title="Plant Guard" subtitle=" " />
+
+
 
                     </div>
+                    <br />
                     <div className='Resume'>
                         <div className='button-resume'>
                             <button className="ui-btn">
@@ -240,7 +249,7 @@ function Landing() {
                             </div>
                         </div>
                         <div className='footer'>
-                            <span>2020 © Shreeram Das. This is just my portfolio site showcasing my journey. Let's create something amazing together!</span>
+                            <span>2020 © Shreeram Das. This is just my portfolio site showcasing my journey. Let's create something amazing together! 🤝</span>
                         </div>
                     </div>
                 </div>

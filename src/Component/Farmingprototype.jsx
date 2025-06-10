@@ -1,23 +1,16 @@
-import "../assets/CSS/Prototype-section.css";
+import "../assets/CSS/desktopaapp.css";
 import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 
 const slides = [
     {
-        image: "https://i.imgur.com/12wnc5y.png",
+        image: "https://i.ibb.co/9kbS77tG/add-order.png",
         title: "Animation",
     },
     {
-        image: "https://i.imgur.com/N2754Fj.png",
+        image: "https://i.ibb.co/N2Jd1Sgr/Dashboard.png",
         title: "CSS",
     },
-    {
-        image: "https://i.imgur.com/P0xLy0U.png",
-        title: "HTML",
-    },
-    {
-        image: "https://i.imgur.com/cCca6Jd.png",
-        title: "React",
-    },
+   
 ];
 
 function getRectnext(el) {
@@ -83,9 +76,9 @@ function Farmingprototype(props) {
     return (
         <div>
             <div className="logo-prototype">
-                <div className="logo-p">{props.svg}</div>
+                {/* <div className="logo-p">{props.svg}</div> */}
                 <div className="logo-t">
-                    <span><a style={{color: "white", textDecoration:"none"}} href="https://www.figma.com/proto/HYbd6m7tkKF0n7j2ssIyqS/PELLICCIS?page-id=0%3A1&node-id=94-11&viewport=367%2C162%2C0.08&t=oAhkfCpCDlFKAIgx-1&scaling=scale-down&starting-point-node-id=94%3A11" target="_blank">{props.title} (click title to view)</a></span>
+                    <span><a style={{color: "white", textDecoration:"none"}} href="https://www.figma.com/design/JU9tckszeXSLsyeQ4xMoT3/motioncar--Car-Rental-Landing-Page--Community-?node-id=0-1&t=Eqt4ijzpya6Qrcub-1" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
                     <p>{props.subtitle}</p>
                 </div>
             </div>

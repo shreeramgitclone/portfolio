@@ -10,20 +10,27 @@
     color: white;
 }
 
+.workhighlight {
+    font-family: "IBM Plex Mono", monospace;
+}
+
 @keyframes breath {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.45);
-    opacity: 0.85;
-  }
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.45);
+        opacity: 0.85;
+    }
 }
 
 .skillset-svg {
-  animation: breath 3s ease-in-out infinite;
-  display: inline-block;
+    animation: breath 3s ease-in-out infinite;
+    display: inline-block;
 }
 
 .profile-section {
@@ -33,12 +40,12 @@
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
-   
+
     font-family: "IBM Plex Mono", monospace;
     font-weight: 200;
     font-size: small;
-   
-   
+
+
     margin-top: 30px;
 }
 
@@ -96,7 +103,7 @@
 }
 
 
-.Descriptionttt{
+.Descriptionttt {
     margin-bottom: 30px;
     font-size: 18px;
 }
@@ -120,7 +127,7 @@
 }
 
 .prototype-section {
-    margin-top: 40px;
+    margin-top: 80px;
     max-width: 600px;
 }
 

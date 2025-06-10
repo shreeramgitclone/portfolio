@@ -3,19 +3,19 @@ import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 
 const slides = [
     {
-        image: "https://i.imgur.com/NBvMH7H.png",
+        image: "https://i.ibb.co/5gSbBqjP/Language-selection.png",
         title: "Animation",
     },
     {
-        image: "https://i.imgur.com/dXBbCXR.png",
+        image: "https://i.ibb.co/35R64j1V/Home-Screen.png",
         title: "CSS",
     },
     {
-        image: "https://i.imgur.com/qcOXwPo.png",
+        image: "https://i.ibb.co/PZxZ6M6n/Product-Details.png",
         title: "HTML",
     },
     {
-        image: "https://i.imgur.com/SSVVeuG.png",
+        image: "https://i.ibb.co/3mT3zMmH/Home-Screen-Menu.png",
         title: "React",
     },
 ];
@@ -87,7 +87,7 @@ function Image({ src, title, selected, ...props }) {
     );
 }
 
-function PrototypeSection(props) {
+function PlantGuardt(props) {
     const [selected, setSelected] = useState(0);
 
     useKeyDown((event) => {
@@ -110,7 +110,7 @@ function PrototypeSection(props) {
             <div className="logo-prototype">
                 {/* <div className="logo-p">{props.svg}</div> */}
                 <div className="logo-t">
-                    <span><a style={{ color: "white", textDecoration: "none" }} href="https://www.figma.com/proto/LceSUNxufCz4wIyP7wWAcs/Ezmanager?page-id=0%3A1&node-id=85-46&viewport=235%2C343%2C0.1&t=D8zh8BYYHvvhzSNY-1&scaling=scale-down&starting-point-node-id=85%3A46" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
+                    <span><a style={{ color: "white", textDecoration: "none" }} href="https://www.figma.com/design/sbpV66fhl9I7Fg3wBj02wT/Plant-Guard?node-id=0-1&t=WHFQrhQV1tfj6nhJ-1" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
                     <p>{props.subtitle}</p>
                 </div>
             </div>
@@ -133,4 +133,4 @@ function PrototypeSection(props) {
     );
 }
 
-export default PrototypeSection;
+export default PlantGuardt;

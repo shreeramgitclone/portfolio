@@ -1,0 +1,77 @@
+.logo-prototype .logo-p {
+    width: fit-content;
+}
+
+.logo-prototype .logo-t {
+    width: fit-content;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.logo-prototype .logo-t p {
+    width: fit-content;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+.image {
+    flex: 1 1 100%;
+    opacity: 0.7;
+    transition: opacity 0.3s linear;
+    cursor: pointer;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    --radius: 1rem;
+    border-radius: var(--radius);
+}
+
+.image .title {
+    display: block;
+    font-size: 2vw;
+    margin: 0.5rem 0;
+    color: #aaa;
+}
+
+.image .title strong {
+    display: block;
+    color: white;
+}
+
+.image[data-selected] {
+    opacity: 1;
+    flex-grow: 1.15;
+    flex-shrink: 0.98;
+}
+
+[data-flip] {
+    transition: transform 0.3s cubic-bezier(0.2, 0, 0.5, 1), border-radius 0.3s cubic-bezier(0.2, 0, 0.5, 1);
+    transform-origin: top left;
+}
+
+[data-flipping] {
+    transition: none;
+    transform: var(--flip-translate) var(--flip-scale);
+    --flip-translate: translate(calc(-1px * var(--dx)), calc(-1px * var(--dy)));
+    --flip-scale: scale(calc(1 / var(--dw)), calc(1 / var(--dh)));
+    --flip-radius: calc((var(--dw)) * var(--radius)) / calc((var(--dh)) * var(--radius));
+}
+
+.title[data-flipping] {
+    transform: var(--flip-translate);
+}
+
+img[data-flipping] {
+    border-radius: var(--flip-radius);
+}

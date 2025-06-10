@@ -1,33 +1,27 @@
-import "../assets/CSS/Prototype-section.css";
+import "../assets/CSS/desktopaapp.css";
 import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 
 const slides = [
     {
-        image: "https://i.imgur.com/NBvMH7H.png",
-        title: "Animation",
-    },
-    {
-        image: "https://i.imgur.com/dXBbCXR.png",
+        image: "https://i.ibb.co/QFC9WjWN/carrental1.png",
         title: "CSS",
     },
     {
-        image: "https://i.imgur.com/qcOXwPo.png",
-        title: "HTML",
+        image: "https://i.ibb.co/rfvPxKDT/carrental2.png",
+        title: "Animation",
     },
-    {
-        image: "https://i.imgur.com/SSVVeuG.png",
-        title: "React",
-    },
+
+
 ];
 
-function getRect(el) {
+function getRectnext(el) {
     return el.getBoundingClientRect();
 }
 
-function flip(firstRect, el) {
+function flipnext(firstRect, el) {
     requestAnimationFrame(() => {
         const lastEl = el;
-        const lastRect = getRect(lastEl);
+        const lastRect = getRectnext(lastEl);
         const dx = lastRect.x - firstRect.x;
         const dy = lastRect.y - firstRect.y;
         const dw = lastRect.width / firstRect.width;
@@ -41,39 +35,29 @@ function flip(firstRect, el) {
     });
 }
 
-function useFlip(ref) {
+function useFlipnext(ref) {
     const rectRef = useRef(null);
     useLayoutEffect(() => {
         if (ref.current) {
             if (!rectRef.current) {
-                rectRef.current = getRect(ref.current);
+                rectRef.current = getRectnext(ref.current);
             }
-            flip(rectRef.current, ref.current);
-            rectRef.current = getRect(ref.current);
+            flipnext(rectRef.current, ref.current);
+            rectRef.current = getRectnext(ref.current);
         }
     });
 }
 
-function useKeyDown(onKeyDown) {
-    useEffect(() => {
-        document.addEventListener("keydown", onKeyDown);
-
-        return () => {
-            document.removeEventListener("keydown", onKeyDown);
-        };
-    }, []);
-}
-
 function ImageTitle(props) {
     const ref = useRef(null);
-    useFlip(ref);
+    useFlipnext(ref);
 
     return <span {...props} ref={ref} data-flip className="title" />;
 }
 
-function Image({ src, title, selected, ...props }) {
+function Imagenext({ src, title, selected, ...props }) {
     const ref = useRef(null);
-    useFlip(ref);
+    useFlipnext(ref);
 
     return (
         <div
@@ -87,30 +71,15 @@ function Image({ src, title, selected, ...props }) {
     );
 }
 
-function PrototypeSection(props) {
+function Farmingprototype(props) {
     const [selected, setSelected] = useState(0);
-
-    useKeyDown((event) => {
-        switch (event.key) {
-            case "ArrowRight":
-                setSelected((selected) => (selected + 1) % slides.length);
-                break;
-            case "ArrowLeft":
-                setSelected(
-                    (selected) => (slides.length + (selected - 1)) % slides.length
-                );
-                break;
-            default:
-                break;
-        }
-    });
 
     return (
         <div>
             <div className="logo-prototype">
-                {/* <div className="logo-p">{props.svg}</div> */}
+              
                 <div className="logo-t">
-                    <span><a style={{ color: "white", textDecoration: "none" }} href="https://www.figma.com/proto/LceSUNxufCz4wIyP7wWAcs/Ezmanager?page-id=0%3A1&node-id=85-46&viewport=235%2C343%2C0.1&t=D8zh8BYYHvvhzSNY-1&scaling=scale-down&starting-point-node-id=85%3A46" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
+                    <span><a style={{ color: "white", textDecoration: "none" }} href="https://www.figma.com/proto/HYbd6m7tkKF0n7j2ssIyqS/PELLICCIS?page-id=0%3A1&node-id=94-11&viewport=367%2C162%2C0.08&t=oAhkfCpCDlFKAIgx-1&scaling=scale-down&starting-point-node-id=94%3A11" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
                     <p>{props.subtitle}</p>
                 </div>
             </div>
@@ -118,7 +87,7 @@ function PrototypeSection(props) {
                 <div className="gallery">
                     {slides.map((slide, index) => {
                         return (
-                            <Image
+                            <Imagenext
                                 src={slide.image}
                                 title={slide.title}
                                 selected={index === selected}
@@ -133,4 +102,4 @@ function PrototypeSection(props) {
     );
 }
 
-export default PrototypeSection;
+export default Farmingprototype;
