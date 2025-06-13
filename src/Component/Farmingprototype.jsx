@@ -78,7 +78,7 @@ function Farmingprototype(props) {
             <div className="logo-prototype">
                 {/* <div className="logo-p">{props.svg}</div> */}
                 <div className="logo-t">
-                    <span><a style={{color: "white", textDecoration:"none"}} href="https://www.figma.com/design/JU9tckszeXSLsyeQ4xMoT3/motioncar--Car-Rental-Landing-Page--Community-?node-id=0-1&t=Eqt4ijzpya6Qrcub-1" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
+                    <span><a style={{color: "white", textDecoration:"none"}} href="https://www.figma.com/design/C68ni70ZhZa8REniEFmfpA/POS-Dashboard-Order?node-id=1-1867&t=V54Z4wk35Ug2SdLV-1" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
                     <p>{props.subtitle}</p>
                 </div>
             </div>

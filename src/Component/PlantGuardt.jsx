@@ -110,7 +110,7 @@ function PlantGuardt(props) {
             <div className="logo-prototype">
                 {/* <div className="logo-p">{props.svg}</div> */}
                 <div className="logo-t">
-                    <span><a style={{ color: "white", textDecoration: "none" }} href="https://www.figma.com/design/sbpV66fhl9I7Fg3wBj02wT/Plant-Guard?node-id=0-1&t=WHFQrhQV1tfj6nhJ-1" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
+                    <span><a style={{ color: "white", textDecoration: "none" }} href="https://www.figma.com/design/sbpV66fhl9I7Fg3wBj02wT/Plant-Guard?node-id=0-1&t=0Ps2obJQypIxjUrj-1" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
                     <p>{props.subtitle}</p>
                 </div>
             </div>

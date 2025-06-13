@@ -85,7 +85,7 @@ function Nextprototype(props) {
             <div className="logo-prototype">
                 {/* <div className="logo-p">{props.svg}</div> */}
                 <div className="logo-t">
-                    <span><a style={{color: "white", textDecoration:"none"}} href="https://www.figma.com/proto/HYbd6m7tkKF0n7j2ssIyqS/PELLICCIS?page-id=0%3A1&node-id=94-11&viewport=367%2C162%2C0.08&t=oAhkfCpCDlFKAIgx-1&scaling=scale-down&starting-point-node-id=94%3A11" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
+                    <span><a style={{color: "white", textDecoration:"none"}} href="https://www.figma.com/design/HYbd6m7tkKF0n7j2ssIyqS/PELLICCIS?node-id=0-1&t=fDr2H0vUlh3s8Q6O-1" target="_blank">{props.title} (click Here to view Figma LInk)</a></span>
                     <p>{props.subtitle}</p>
                 </div>
             </div>
