@@ -249,7 +249,7 @@ function Landing() {
                             </div>
                         </div>
                         <div className='footer'>
-                            <span>2020 © Shreeram Das. This is just my portfolio site showcasing my journey. Let's create something amazing together! 🤝</span>
+                            <span>2025 © Shreeram Das. This is just my portfolio site showcasing my journey. Let's create something amazing together! 🤝</span>
                         </div>
                     </div>
                 </div>
